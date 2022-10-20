@@ -39,7 +39,7 @@ Verifying the metadata of our dataset we can confirm it is open-source.
   - Daily sleep logs, tracked by: Total count of sleeps a day, Total minutes, Total Time in Bed
 
 ### 3. Process
-I will use Python and popular data analysis libraries.
+I will use Python and its popular data analysis libraries.
 
 #### 3.1 Importing necessary libraries
 - pandas
@@ -63,4 +63,33 @@ import matplotlib.pyplot as plt
 
 daily_activity = pd.read_csv(r"D:\PROJECTS\Google DA Capstone\Fitabase Data 4.12.16-5.12.16\For Project\dailyActivity.csv")
 daily_sleep = pd.read_csv(r"D:\PROJECTS\Google DA Capstone\Fitabase Data 4.12.16-5.12.16\For Project\sleepDay.csv")
+```
+
+#### 3.2 Data Cleaning & Preparation
+
+- **Case consistency**
+
+```
+#Turning column names to lowercase for consistency
+
+daily_activity.columns = daily_activity.columns.str.lower()
+daily_sleep.columns = daily_sleep.columns.str.lower()
+```
+
+```
+###Removing unncessary columns
+
+#In daily_activity df 'totalDistance' and 'tranckerdistance' seems to have the same data. Remove 'trackerdistance' column
+
+daily_activity.drop(columns='trackerdistance', inplace= True)
+
+
+#Drop LoggedActivitiesDistance from daily_activity
+
+daily_activity.drop(columns='loggedactivitiesdistance', inplace = True)
+
+
+#SedentaryActiveDistance doesn't add any value and is pretty much useless so we will remove it
+
+daily_activity.drop(columns='sedentaryactivedistance', inplace = True)
 ```
