@@ -119,3 +119,24 @@ daily_sleep['id'].nunique()
 daily_activity['id'].nunique() - daily_sleep['id'].nunique()
 ```
 9
+
+- **Removing Duplicates**
+```
+#Removing duplicates
+
+daily_sleep.drop_duplicates(inplace= True)
+
+#check
+
+sum(daily_sleep.duplicated())
+```
+0
+
+- **Changing data format**
+-
+```
+#changing 'activitydate' & 'sleepday' columns to datetime
+
+daily_activity['activitydate'] = pd.to_datetime(daily_activity['activitydate'])
+daily_sleep['sleepday'] = pd.to_datetime(daily_sleep['sleepday'])
+```
