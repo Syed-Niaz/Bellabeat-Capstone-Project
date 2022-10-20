@@ -108,10 +108,14 @@ Verifying number of users in datasets
 daily_activity['id'].nunique()
 ```
 33
+
+People who used their devices daily.
 ```
 daily_sleep['id'].nunique()
 ```
 24
+
+People who used their devices even during sleeping.
 ```
 daily_activity['id'].nunique() - daily_sleep['id'].nunique()
 ```
