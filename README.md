@@ -37,3 +37,20 @@ Verifying the metadata of our dataset we can confirm it is open-source.
   - Daily Activity over 31 days of 33 users. Tracking daily: Steps, Distance, Intensities, Calories
 - **sleepDay_merged**
   - Daily sleep logs, tracked by: Total count of sleeps a day, Total minutes, Total Time in Bed
+
+### 3. Process
+I will use Python and popular data analysis libraries.
+
+#### 3.1 Importing necessary libraries
+- pandas
+- numpy
+- matplotlib
+- seaborn
+
+```
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+%matplotlib inline
+```
