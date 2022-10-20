@@ -103,6 +103,7 @@ daily_activity['totaldistance'] = daily_activity['totaldistance'].round(decimals
 ```
 
 - **Identifying number of users**
+
 Verifying number of users in datasets
 ```
 daily_activity['id'].nunique()
