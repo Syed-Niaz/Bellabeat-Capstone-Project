@@ -112,6 +112,7 @@ daily_activity['id'].nunique()
 daily_sleep['id'].nunique()
 ```
 24
+
 People who use device daily but not during sleep
 ```
 daily_activity['id'].nunique() - daily_sleep['id'].nunique()
