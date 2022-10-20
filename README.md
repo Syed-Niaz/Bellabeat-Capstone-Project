@@ -14,7 +14,7 @@ The main focus of this case is to analyze smart devices fitness data and determi
 - Share
 - Act
 
-### Ask
+### 1. Ask
 Identify trends in how consumers use non-Bellabeat smart devices to apply insights into Bellabeat’s marketing strategy.
 
 Stakeholders:
@@ -22,6 +22,6 @@ Stakeholders:
 - Sando Mur - Bellabeat cofounder and key member of Bellabeat executive team
 - Bellabeat Marketing Analytics team
 
-### Prepare
+### 2. Prepare
 #### Dataset
 Link: [FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit)
