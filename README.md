@@ -103,9 +103,8 @@ daily_activity['totaldistance'] = daily_activity['totaldistance'].round(decimals
 ```
 
 - **Identifying number of users**
+Verifying number of users in datasets
 ```
-#Verifying number of users in datasets
-
 daily_activity['id'].nunique()
 ```
 33
@@ -113,9 +112,8 @@ daily_activity['id'].nunique()
 daily_sleep['id'].nunique()
 ```
 24
+People who use device daily but not during sleep
 ```
-#people who use device daily but not during sleep
-
 daily_activity['id'].nunique() - daily_sleep['id'].nunique()
 ```
 9
@@ -133,9 +131,8 @@ sum(daily_sleep.duplicated())
 0
 
 - **Changing data format**
+Changing 'activitydate' & 'sleepday' columns to datetime format
 ```
-#changing 'activitydate' & 'sleepday' columns to datetime
-
 daily_activity['activitydate'] = pd.to_datetime(daily_activity['activitydate'])
 daily_sleep['sleepday'] = pd.to_datetime(daily_sleep['sleepday'])
 ```
