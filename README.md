@@ -56,3 +56,11 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 %matplotlib inline
 ```
+#### 3.2 Importing datasets
+
+```
+#importing csv files into dataframes
+
+daily_activity = pd.read_csv(r"D:\PROJECTS\Google DA Capstone\Fitabase Data 4.12.16-5.12.16\For Project\dailyActivity.csv")
+daily_sleep = pd.read_csv(r"D:\PROJECTS\Google DA Capstone\Fitabase Data 4.12.16-5.12.16\For Project\sleepDay.csv")
+```
