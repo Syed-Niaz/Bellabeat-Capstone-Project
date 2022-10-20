@@ -108,13 +108,14 @@ daily_activity['totaldistance'] = daily_activity['totaldistance'].round(decimals
 
 daily_activity['id'].nunique()
 ```
-
+33
 ```
 daily_sleep['id'].nunique()
 ```
-
+24
 ```
 #people who use device daily but not during sleep
 
 daily_activity['id'].nunique() - daily_sleep['id'].nunique()
 ```
+9
