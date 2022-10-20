@@ -75,7 +75,7 @@ daily_sleep = pd.read_csv(r"D:\PROJECTS\Google DA Capstone\Fitabase Data 4.12.16
 daily_activity.columns = daily_activity.columns.str.lower()
 daily_sleep.columns = daily_sleep.columns.str.lower()
 ```
-- **Removing some unnessary columns*
+- **Removing some unnessary columns**
 
 ```
 ###Removing unncessary columns
