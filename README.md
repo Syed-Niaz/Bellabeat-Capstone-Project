@@ -58,6 +58,10 @@ import matplotlib.pyplot as plt
 ```
 #### 3.2 Importing datasets
 
+For our analysis we are going to use the 2 CSV files.
+- daily_activity
+- daily_sleep
+
 ```
 #importing csv files into dataframes
 
