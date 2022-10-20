@@ -75,6 +75,7 @@ daily_sleep = pd.read_csv(r"D:\PROJECTS\Google DA Capstone\Fitabase Data 4.12.16
 daily_activity.columns = daily_activity.columns.str.lower()
 daily_sleep.columns = daily_sleep.columns.str.lower()
 ```
+- **Removing some unnessary columns*
 
 ```
 ###Removing unncessary columns
@@ -92,4 +93,28 @@ daily_activity.drop(columns='loggedactivitiesdistance', inplace = True)
 #SedentaryActiveDistance doesn't add any value and is pretty much useless so we will remove it
 
 daily_activity.drop(columns='sedentaryactivedistance', inplace = True)
+```
+- **Round column to 2 decimal places**
+
+```
+#Changing 'totaldistance' to 2 decimal places
+
+daily_activity['totaldistance'] = daily_activity['totaldistance'].round(decimals= 2)
+```
+
+- **Identifying number of users**
+```
+#Verifying number of users in datasets
+
+daily_activity['id'].nunique()
+```
+
+```
+daily_sleep['id'].nunique()
+```
+
+```
+#people who use device daily but not during sleep
+
+daily_activity['id'].nunique() - daily_sleep['id'].nunique()
 ```
