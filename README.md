@@ -65,7 +65,7 @@ daily_activity = pd.read_csv(r"D:\PROJECTS\Google DA Capstone\Fitabase Data 4.12
 daily_sleep = pd.read_csv(r"D:\PROJECTS\Google DA Capstone\Fitabase Data 4.12.16-5.12.16\For Project\sleepDay.csv")
 ```
 
-#### 3.2 Data Cleaning & Preparation
+#### 3.3 Data Cleaning & Preparation
 
 - **Case consistency**
 
