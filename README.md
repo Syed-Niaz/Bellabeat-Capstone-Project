@@ -48,6 +48,8 @@ I will use Python and popular data analysis libraries.
 - seaborn
 
 ```
+#Importing libraries
+
 import pandas as pd
 import numpy as np
 import seaborn as sns
