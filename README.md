@@ -23,5 +23,5 @@ Stakeholders:
 - Bellabeat Marketing Analytics team
 
 ### 2. Prepare
-#### Dataset
+####   - Dataset
 Link: [FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit)
