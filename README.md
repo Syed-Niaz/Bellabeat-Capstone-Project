@@ -113,7 +113,8 @@ daily_sleep['id'].nunique()
 ```
 24
 
-People who use device daily but not during sleep
+
+There are people who used their devices daily but probably took them off during before their sleep. Subtracting the number of users from the two tables will give us the answer.
 ```
 daily_activity['id'].nunique() - daily_sleep['id'].nunique()
 ```
