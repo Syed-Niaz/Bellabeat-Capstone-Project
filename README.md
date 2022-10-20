@@ -136,6 +136,7 @@ sum(daily_sleep.duplicated())
 0
 
 - **Changing data format**
+
 Changing 'activitydate' & 'sleepday' columns to datetime format
 ```
 daily_activity['activitydate'] = pd.to_datetime(daily_activity['activitydate'])
