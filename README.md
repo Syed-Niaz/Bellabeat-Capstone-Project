@@ -140,8 +140,6 @@ daily_activity['activitydate'] = pd.to_datetime(daily_activity['activitydate'])
 daily_sleep['sleepday'] = pd.to_datetime(daily_sleep['sleepday'])
 ```
 
-```
-
 Since we will merge the 'daily_activity' & 'daily_sleep' dataframes we want to maintain date format consistency, 
 so we will ignore the time part of 'sleepday' column in 'daily_sleep' dataframe
 
