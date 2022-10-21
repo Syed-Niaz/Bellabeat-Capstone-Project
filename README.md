@@ -79,7 +79,7 @@ daily_sleep = pd.read_csv(r"D:\PROJECTS\Google DA Capstone\Fitabase Data 4.12.16
 
 #### 3.3 Data Cleaning & Preparation
 
-- **Case consistency**
+- **Case consistency in the column names**
 
 ```
 #Turning column names to lowercase for consistency
@@ -106,7 +106,7 @@ daily_activity.drop(columns='loggedactivitiesdistance', inplace = True)
 
 daily_activity.drop(columns='sedentaryactivedistance', inplace = True)
 ```
-- **Round column to 2 decimal places**
+- **Round 'totaldistance' column to 2 decimal places**
 
 ```
 #Changing 'totaldistance' to 2 decimal places
@@ -135,6 +135,7 @@ daily_activity['id'].nunique() - daily_sleep['id'].nunique()
 9
 
 People who used their devices daily but probably took them off during before their sleep.
+
 - **Removing Duplicates**
 ```
 #Removing duplicates
@@ -147,7 +148,7 @@ sum(daily_sleep.duplicated())
 ```
 0
 
-- **Changing data format**
+- **Changing Data Format**
 
 Changing 'activitydate' & 'sleepday' columns to datetime format
 ```
