@@ -30,6 +30,7 @@ Identify trends in how consumers use non-Bellabeat smart devices to apply insigh
 ### 2. Prepare
 #### 2.1 Dataset
 **Link:** [FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit)
+
 This dataset is stored in Kaggle and was made available through Mobius.
 
 #### 2.2 Information about dataset
