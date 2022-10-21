@@ -44,13 +44,13 @@ Verifying the metadata of our dataset we can confirm it is open-source.
   - Daily sleep logs, tracked by: Total count of sleeps a day, Total minutes, Total Time in Bed
 
 ### 3. Process
-I will use Python and its popular data analysis libraries.
+I will use Python and some of its libraries that are commonly used for data analysis tasks.
 
 #### 3.1 Importing necessary libraries
-- pandas
-- numpy
-- matplotlib
-- seaborn
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
 
 ```
 #Importing libraries
