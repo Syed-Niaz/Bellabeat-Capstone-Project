@@ -229,3 +229,27 @@ plt.title('Avg Steps walked daily per user')
 plt.show()
 ```
 ![This is an image]())
+
+**User Classification**
+
+```
+#adding a conditional column 'user_type' based on average total steps per user
+
+conditions = [
+    (avg_data['totalsteps'] >= 10000),
+    (avg_data['totalsteps'] >= 7500) & (avg_data['totalsteps'] < 10000),
+    (avg_data['totalsteps'] >= 5000) & (avg_data['totalsteps'] < 7500),
+    (avg_data['totalsteps'] < 5000)
+]
+
+values = ['very active', 'fairly active', 'lightly active', 'sedentary']
+
+avg_data['user_type'] = np.select(conditions, values)
+
+#round the dataframe values to 2 decimal places
+
+avg_data = avg_data.round(2)
+
+avg_data
+```
+
