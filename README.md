@@ -238,12 +238,16 @@ plt.show()
 
 **User Classification - Avg Steps**
 
-We will classify users based on the average number of steps they walked daily. The following benchmarks are set for classification:
+We will classify users based on the average number of steps they walked daily. 
+
+The following benchmarks are set for classification:
 
 - Sedentary - Less than 5000 steps a day
 - Lightly Active - Between 5000 and 7499 steps a day
 - Fairly Active - Between 7500 and 9999 steps a day
 - Very Active - 10000 steps or more a day
+
+This benchmark is used as a reference to set the conditons in the code.
 
 ```
 #adding a conditional column 'user_type' based on average total steps per user
