@@ -516,3 +516,11 @@ plt.legend()
 plt.show()
 ```
 ![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/Users'%20Sleep%20Pattern.png)
+
+
+### 5. Act
+
+| Recommendation  | Details |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
