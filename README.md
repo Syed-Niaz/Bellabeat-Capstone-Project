@@ -168,11 +168,9 @@ daily_sleep.rename(columns= {'sleepday':'activitydate'}, inplace= True)
 df_activity_sleep = pd.merge(left = daily_activity, right = daily_sleep, on = ['id', 'activitydate'], how = "inner")
 ```
 
-### 3. Analyze
+### 4. Analyze & Share
 
-- **Making Group By**
-
-
+- **Group By**
 
 ```
 #group by id for 'df_activity_sleep'
@@ -187,7 +185,20 @@ groupby_id_daily_activity = daily_activity.groupby(by= 'id')
 ```
 
 ```
-#group by 'id' on 'daily_sleep' df so that we can find mean sleep each user is getting
+#group by 'id' for 'daily_sleep'
 
 groupby_id_daily_sleep = daily_sleep.groupby(by='id')
 ```
+
+```
+
+Creating a dataframe with some average datas of each category as per 'id' and then resetting the index
+
+```
+avg_data = groupby_id_activity_sleep.mean()
+
+#resetting the index
+
+avg_data.reset_index(inplace=True)
+```
+
