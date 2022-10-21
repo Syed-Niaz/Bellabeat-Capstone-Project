@@ -228,4 +228,4 @@ plt.title('Avg Steps walked daily per user')
 
 plt.show()
 ```
-![This is an image]([https://myoctocat.com/assets/images/base-octocat.svg](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/barh.png))
+![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/barh.png))
