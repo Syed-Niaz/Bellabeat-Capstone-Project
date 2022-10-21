@@ -170,7 +170,7 @@ df_activity_sleep = pd.merge(left = daily_activity, right = daily_sleep, on = ['
 
 ### 4. Analyze & Share
 
-- **Group By**
+Group By
 
 ```
 #group by id for 'df_activity_sleep'
@@ -228,3 +228,4 @@ plt.title('Avg Steps walked daily per user')
 
 plt.show()
 ```
+![This is an image]([https://myoctocat.com/assets/images/base-octocat.svg](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/barh.png))
