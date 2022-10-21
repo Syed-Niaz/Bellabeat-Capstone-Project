@@ -339,3 +339,25 @@ plt.show()
 ```
 
 ![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/Total%20Steps%20VS%20Total%20Minutes%20Slept.png)
+
+**Device Usage**
+
+```
+#We will get number of days device was worn but with 1 less day
+
+days_worn = groupby_id_daily_activity['activitydate'].max() - groupby_id_daily_activity['activitydate'].min()
+```
+Create a 'days_worn- dataframe
+```
+days_worn = pd.DataFrame(days_worn)
+
+#resetting index
+
+days_worn.reset_index(inplace=True)
+
+#first converting 'activitydate' col value into str so we can use split to separate 'days' term
+
+days_worn['activitydate'] = days_worn['activitydate'].astype('str')
+
+days_worn
+```
