@@ -469,3 +469,34 @@ avg_sleep['id']= avg_data['id'].astype('str')
 
 avg_sleep
 ```
+
+**Users' Sleep Pattern**
+
+```
+#change 'id' dtype to str so it can be used as a label
+
+avg_sleep['id']= avg_data['id'].astype('str')
+```
+
+```
+#formating the figuresize and font
+
+plt.figure(figsize=(17,12))
+plt.rc('axes', titlesize=15)
+plt.rc('axes', labelsize=15)
+plt.rc('xtick', labelsize=12)
+plt.xticks(rotation='vertical')
+
+#Barchart
+
+plt.bar(x=avg_sleep['id'], height=avg_sleep['totaltimeinbed'], label= "Time in Bed", )
+plt.bar(x=avg_sleep['id'], height=avg_sleep['totalminutesasleep'], label= "Avg min Slept", )
+plt.bar(x=avg_sleep['id'], height=avg_sleep['time_to_fall_asleep'], label= "min to Fall Asleep")
+
+plt.title('Sleep Pattern')
+plt.ylabel('Minutes')
+
+plt.legend()
+plt.show()
+```
+![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/Users'%20Sleep%20Pattern.png)
