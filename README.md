@@ -522,5 +522,5 @@ plt.show()
 
 **Sleep Alert**
 Even after getting in bed some users tend to fall asleep later. This may indicate bad bedtime habits like using the phone in bed or also indicate that they have trouble falling asleep. 
-- A 'Warning' alert to send a message to users to stop using their phones.
-- Recommend contents (blog or video) to users who struggle falling asleep about how they can improve their sleeping habits . Content recommendation should be sent at a time based on user sleep patter so that users doesn't start watching the content while they are in bed.
+- **'Warning' alert** to send a message to users to stop using their phones.
+- **Content Recommendation** (blog or video) to users who struggle falling asleep about how they can improve their sleeping habits . Content recommendation should be sent at a time based on user sleep patter so that users doesn't start watching the content while they are in bed.
