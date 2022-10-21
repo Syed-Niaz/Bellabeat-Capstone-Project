@@ -170,7 +170,7 @@ df_activity_sleep = pd.merge(left = daily_activity, right = daily_sleep, on = ['
 
 ### 4. Analyze & Share
 
-Group By
+**Group By**
 
 ```
 #group by id for 'df_activity_sleep'
@@ -305,3 +305,33 @@ plt.show()
 ```
 
 ![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/piechart.png)
+
+**Correlations**
+
+```
+#CORRELATION between steps & calories
+
+plt.figure(figsize=(10,10))
+
+
+#Scatter Plot with Seaborn
+
+sns.regplot(x= 'totalsteps', y= 'calories', data = daily_activity, scatter_kws= {"color": "blue"}, line_kws= {"color": "red"})
+
+plt.title('Total Steps VS Calories')
+
+plt.show()
+```
+
+```
+#CORRELATION between steps & sleep
+
+plt.figure(figsize=(10,10))
+
+#Scatter Plot with seaborn
+
+sns.regplot(x= 'totalsteps', y= 'totalminutesasleep', data = df_activity_sleep, scatter_kws= {"color": "blue"}, line_kws= {"color": "red"})
+
+plt.title('Total Steps VS Total Minutes Slept')
+plt.show()
+```
