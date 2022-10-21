@@ -284,6 +284,7 @@ user_type_percentage
 
 **User Classification Visualization**
 
+```
 #USER CATEGORY- Pie Chart of the users categorized by their activity level which is measured by their avg daily steps
 
 #formating fig size and label
@@ -301,5 +302,6 @@ plt.title('User Type %')
 plt.legend()
 
 plt.show()
+```
 
 ![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/piechart.png)
