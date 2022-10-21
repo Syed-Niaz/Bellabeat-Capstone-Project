@@ -230,7 +230,7 @@ plt.show()
 ```
 ![This is an image]())
 
-**User Classification**
+**User Classification based on Avg Steps**
 
 ```
 #adding a conditional column 'user_type' based on average total steps per user
@@ -281,3 +281,7 @@ user_type_percentage.rename(columns={'index':'user_type',
                                     
 user_type_percentage
 ```
+
+**User Classification Visualization**
+
+![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/piechart.png))
