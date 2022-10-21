@@ -304,7 +304,7 @@ plt.legend()
 plt.show()
 ```
 
-![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/piechart.png)
+![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/User%20Type.png)
 
 **Correlations**
 
