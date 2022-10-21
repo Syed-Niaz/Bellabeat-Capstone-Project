@@ -252,7 +252,7 @@ avg_data = avg_data.round(2)
 
 avg_data
 ```
-Making a new datafer for **User Classification**
+Making a new dataframe 'user_type_percentage' based on **User Classification**
 
 ```
 df_user_type = avg_data[['id','user_type']]
