@@ -347,7 +347,7 @@ plt.show()
 
 days_worn = groupby_id_daily_activity['activitydate'].max() - groupby_id_daily_activity['activitydate'].min()
 ```
-Create a 'days_worn- dataframe
+Create a 'days_worn' dataframe
 ```
 days_worn = pd.DataFrame(days_worn)
 
@@ -359,5 +359,25 @@ days_worn.reset_index(inplace=True)
 
 days_worn['activitydate'] = days_worn['activitydate'].astype('str')
 
+#first converting 'activitydate' col value into str so we can use split to separate 'days' term
+
+days_worn['activitydate'] = days_worn['activitydate'].astype('str')
+
+#adding the separated column to our 'days_worn' df
+
+days_worn['activitydate']= x[0]
+
+days_worn['activitydate'] = days_worn['activitydate'].astype('int')
+
+#Add the 1 day to fix the final 'days_worn' df
+
+days_worn['activitydate'] = days_worn['activitydate']+1
+
+#renaming column appropriately
+
+days_worn.rename(columns={'activitydate': 'days'}, inplace= True)
+
 days_worn
 ```
+
+
