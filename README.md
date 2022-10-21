@@ -380,4 +380,36 @@ days_worn.rename(columns={'activitydate': 'days'}, inplace= True)
 days_worn
 ```
 
+```
+#adding a conditional column 'use' based on days device was used/worn per user
+
+conditions = [
+    (days_worn['days'] >= 21),
+    (days_worn['days'] >= 11) & (days_worn['days'] <= 20),
+    (days_worn['days'] <= 10)
+]
+
+values = ['high use', 'moderate use', 'low use']
+
+days_worn['use'] = np.select(conditions, values)
+
+days_worn
+
+```
+
+```
+days_worn_perc = days_worn['use'].value_counts(normalize=True)*100
+
+days_worn_perc = pd.DataFrame(days_worn_perc)
+
+days_worn_perc= round(days_worn_perc, 2)
+
+days_worn_perc.reset_index(inplace=True)
+
+days_worn_perc.rename(columns={'index':'use_level',
+                                    'user_type': 'perc_total'}, inplace= True)
+
+days_worn_perc
+```
+
 
