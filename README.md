@@ -201,6 +201,9 @@ avg_data.reset_index(inplace=True)
 
 avg_data
 ```
+
+**User Type - Avg Steps daily Visualization**
+
 We want to find the average number of steps walked daily by each user and then plot that into a chart.
 
 ```
