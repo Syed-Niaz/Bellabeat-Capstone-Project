@@ -231,7 +231,7 @@ plt.title('Avg Steps walked daily per user')
 
 plt.show()
 ```
-![This is an image](![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/User%20Type%20-%20Device%20Usage.png))
+![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/Avg%20Steps%20daily.png)
 
 **User Classification - Avg Steps**
 
@@ -307,7 +307,7 @@ plt.legend()
 plt.show()
 ```
 
-![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/User%20Type.png)
+![This is an image](![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/User%20Type%20-%20Device%20Usage.png))
 
 **Correlations**
 
