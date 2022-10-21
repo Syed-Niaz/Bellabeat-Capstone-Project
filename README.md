@@ -201,4 +201,30 @@ avg_data.reset_index(inplace=True)
 
 avg_data
 ```
+We want to find the average number of steps walked daily by each user and then plot that into a chart.
 
+```
+#changing 'id' to string type for plotting bar chart
+
+avg_data['id']= avg_data['id'].astype('str')
+
+#adjust figure size, label font size, and axis font size
+
+plt.figure(figsize=(10,10))
+plt.rc('axes', titlesize=15)
+plt.rc('axes', labelsize=15)
+plt.rc('xtick', labelsize=10)
+plt.rc('ytick', labelsize=10)
+
+#Horizontal Barchart and values Sorted by 'totalsteps' in ascending order
+
+plt.barh(avg_data['id'], avg_data['totalsteps'].sort_values(ascending=True))
+
+#labeling
+
+plt.xlabel('Avg Steps')
+plt.ylabel('ID')
+plt.title('Avg Steps walked daily per user')
+
+plt.show()
+```
