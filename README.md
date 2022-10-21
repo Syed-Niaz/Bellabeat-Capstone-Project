@@ -366,6 +366,10 @@ days_worn['activitydate'] = days_worn['activitydate'].astype('str')
 
 days_worn['activitydate'] = days_worn['activitydate'].astype('str')
 
+#spilting away 'days' term from the column
+
+x= days_worn['activitydate'].str.split(' ', expand= True)
+
 #adding the separated column to our 'days_worn' df
 
 days_worn['activitydate']= x[0]
