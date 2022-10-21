@@ -153,3 +153,17 @@ so we will ignore the time part of 'sleepday' column in 'daily_sleep' dataframe
 ```
 daily_sleep['sleepday'] = pd.to_datetime(daily_sleep['sleepday']).dt.date
 ```
+
+We have to change 'sleepday' column format again and rename it.
+```
+daily_sleep['sleepday'] = pd.to_datetime(daily_sleep['sleepday'])
+
+daily_sleep.rename(columns= {'sleepday':'activitydate'}, inplace= True)
+```
+
+- **Merging Dataframes**
+```
+#Merging 'daily_activity' and 'daily_sleep' datasets
+
+df_activity_sleep = pd.merge(left = daily_activity, right = daily_sleep, on = ['id', 'activitydate'], how = "inner")
+```
