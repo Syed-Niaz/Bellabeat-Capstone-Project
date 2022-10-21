@@ -435,3 +435,27 @@ plt.show()
 ```
 ![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/User%20Type%20-%20Device%20Usage.png)
 
+**User Sleep Pattern**
+
+```
+#putting it in a df and resetting the index
+
+avg_sleep= groupby_id_daily_sleep.mean()
+
+avg_sleep.reset_index(inplace= True)
+
+avg_sleep
+```
+
+```
+#Let's see how long user's are in bed when they are not asleep
+#could indicate bad sleeping habits
+
+avg_sleep['time_to_fall_asleep'] = avg_sleep['totaltimeinbed'] - avg_sleep['totalminutesasleep']
+
+#change 'id' dtype to str so it can be used as a label
+
+avg_sleep['id']= avg_data['id'].astype('str')
+
+avg_sleep
+```
