@@ -252,4 +252,32 @@ avg_data = avg_data.round(2)
 
 avg_data
 ```
+Making a new datafer for **User Classification**
 
+```
+df_user_type = avg_data[['id','user_type']]
+
+#proportion of each user_type value to total in % into a dataframe
+
+user_type_percentage = df_user_type['user_type'].value_counts(normalize= True)*100
+
+user_type_percentage = pd.DataFrame(data= user_type_percentage)
+
+
+#round to 2 decimal places
+
+user_type_percentage = user_type_percentage.round(2)
+
+user_type_percentage
+
+#reset the index
+
+user_type_percentage.reset_index(inplace= True)
+
+#rename the columns properly
+
+user_type_percentage.rename(columns={'index':'user_type',
+                                    'user_type': 'perc_total'}, inplace= True)
+                                    
+user_type_percentage
+```
