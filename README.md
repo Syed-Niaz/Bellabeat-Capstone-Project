@@ -228,9 +228,9 @@ plt.title('Avg Steps walked daily per user')
 
 plt.show()
 ```
-![This is an image]())
+![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/User%20Type%20-%20Avg%20Steps.png)
 
-**User Classification based on Avg Steps**
+**User Classification - Avg Steps**
 
 ```
 #adding a conditional column 'user_type' based on average total steps per user
@@ -282,7 +282,7 @@ user_type_percentage.rename(columns={'index':'user_type',
 user_type_percentage
 ```
 
-**User Classification Visualization**
+**User Classification - Avg Steps Visualization**
 
 ```
 #USER CATEGORY- Pie Chart of the users categorized by their activity level which is measured by their avg daily steps
@@ -396,6 +396,7 @@ days_worn['use'] = np.select(conditions, values)
 days_worn
 
 ```
+**User Classification - Device Usage**
 
 ```
 days_worn_perc = days_worn['use'].value_counts(normalize=True)*100
@@ -412,4 +413,25 @@ days_worn_perc.rename(columns={'index':'use_level',
 days_worn_perc
 ```
 
+**User Classification - Device Usage Visualization**
+
+```
+#USER CATEGORY- Pie Chart of the users categorized by their activity level which is measured by their avg daily steps
+
+#formating fig size and label
+
+plt.figure(figsize=(8,8))
+plt.rc('axes', titlesize=15)
+
+#Pie Chart
+
+plt.pie(days_worn_perc['use'], labels= days_worn_perc['use_level'], autopct='%1.1f%%')
+
+plt.title('User Type %')
+
+plt.legend()
+
+plt.show()
+```
+![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/User%20Type%20-%20Device%20Usage.png)
 
