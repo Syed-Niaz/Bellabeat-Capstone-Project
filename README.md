@@ -190,7 +190,7 @@ groupby_id_daily_activity = daily_activity.groupby(by= 'id')
 groupby_id_daily_sleep = daily_sleep.groupby(by='id')
 ```
 
-Creating a dataframe with some average datas of each category as per 'id' and then resetting the index
+Creating a dataframe 'avg_data' with some average datas of each category as per 'id' and then resetting the index
 
 ```
 avg_data = groupby_id_activity_sleep.mean()
@@ -198,5 +198,7 @@ avg_data = groupby_id_activity_sleep.mean()
 #resetting the index
 
 avg_data.reset_index(inplace=True)
+
+avg_data
 ```
 
