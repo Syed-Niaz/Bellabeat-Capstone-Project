@@ -520,7 +520,9 @@ plt.show()
 
 ### 5. Act
 
-| Recommendation  | Details |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Sleep Notification  | - asdsa  |
+**Sleep Alert**
+- Even after getting in bed some users tend to fall asleep later. This may indicate bad bedtime habits like using the phone in bed or also indicate that they have trouble falling asleep. 
+
+A 'Warning' alert to send a message to users to stop using their phones or recommend users contents (blog or video) about how they can improve their sleeping habits.
+
+Content recommendation should be sent at a time based on user sleep patter so that users doesn't start watching the content while they are in bed.
