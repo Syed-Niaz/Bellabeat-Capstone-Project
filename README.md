@@ -207,7 +207,10 @@ We want to find the average number of steps walked daily by each user and then p
 #changing 'id' to string type for plotting bar chart
 
 avg_data['id']= avg_data['id'].astype('str')
+```
 
+
+```
 #adjust figure size, label font size, and axis font size
 
 plt.figure(figsize=(10,10))
@@ -228,7 +231,7 @@ plt.title('Avg Steps walked daily per user')
 
 plt.show()
 ```
-![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/User%20Type%20-%20Avg%20Steps.png)
+![This is an image](![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/User%20Type%20-%20Device%20Usage.png))
 
 **User Classification - Avg Steps**
 
