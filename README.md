@@ -323,6 +323,8 @@ plt.title('Total Steps VS Calories')
 plt.show()
 ```
 
+![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/Total%20Steps%20VS%20Calories.png)
+
 ```
 #CORRELATION between steps & sleep
 
@@ -335,3 +337,5 @@ sns.regplot(x= 'totalsteps', y= 'totalminutesasleep', data = df_activity_sleep, 
 plt.title('Total Steps VS Total Minutes Slept')
 plt.show()
 ```
+
+![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/Total%20Steps%20VS%20Calories.png)
