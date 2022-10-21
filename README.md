@@ -154,7 +154,7 @@ so we will ignore the time part of 'sleepday' column in 'daily_sleep' dataframe
 daily_sleep['sleepday'] = pd.to_datetime(daily_sleep['sleepday']).dt.date
 ```
 
-We have to change 'sleepday' column format again and rename it.
+The 'sleepday' column data format needs to be changed again and renamed.
 ```
 daily_sleep['sleepday'] = pd.to_datetime(daily_sleep['sleepday'])
 
@@ -162,6 +162,9 @@ daily_sleep.rename(columns= {'sleepday':'activitydate'}, inplace= True)
 ```
 
 - **Merging Dataframes**
+
+Merging the two tables 'daily_activity' and 'daily_sleep' and forming a new merged dataframe 'daily_activity_sleep' will allow us to see data from both tables in a single table.
+
 ```
 #Merging 'daily_activity' and 'daily_sleep' datasets
 
@@ -171,6 +174,8 @@ df_activity_sleep = pd.merge(left = daily_activity, right = daily_sleep, on = ['
 ### 4. Analyze & Share
 
 **Group By**
+
+Grouping By 'id' will allow the process of doing calculations for each user a lot easier.
 
 ```
 #group by id for 'df_activity_sleep'
