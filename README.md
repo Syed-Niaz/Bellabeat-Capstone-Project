@@ -1,7 +1,7 @@
 # Bellabeat-Capstone-Project
 This capstone project is a part of the 'Google Data Analytics' professional certificate.
 
-**Also See** - [Bellabeat.ipynb](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/Bellabeat.ipynb)
+**Also See**: [Bellabeat.ipynb](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/Bellabeat.ipynb)
 
 It has all the codes used for this project.
 
