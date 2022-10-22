@@ -473,7 +473,7 @@ plt.show()
 ```
 ![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/User%20Type%20-%20Device%20Usage.png)
 
-**User Sleep Pattern**
+**Users' Sleep Pattern**
 
 Time to look into the sleep patter of the users. We will look into the following stats in comparison to each other:
 - Time in bed
@@ -503,7 +503,9 @@ avg_sleep['id']= avg_data['id'].astype('str')
 avg_sleep
 ```
 
-**Users' Sleep Pattern Visualization**
+**'Users' Sleep Pattern' Visualization**
+
+Visualizing the users' sleep pattern with information like total time in bed, total minutes asleep and time to fall asleep in a stacked bar chart.
 
 ```
 #change 'id' dtype to str so it can be used as a label
