@@ -285,7 +285,7 @@ avg_data = avg_data.round(2)
 
 avg_data
 ```
-Making a new dataframe 'user_type_percentage' based on **User Classification**
+Making a new dataframe 'user_type_percentage' based on User Classification.
 
 ```
 df_user_type = avg_data[['id','user_type']]
@@ -415,6 +415,11 @@ days_worn.rename(columns={'activitydate': 'days'}, inplace= True)
 
 days_worn
 ```
+The following benchmarks are set for classification:
+
+- High Use - More than 20 days
+- Moderate Use - Between 10 to 20 days
+- Low Use - Less than 10 days
 
 ```
 #adding a conditional column 'use' based on days device was used/worn per user
