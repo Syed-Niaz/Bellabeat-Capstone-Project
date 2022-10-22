@@ -140,7 +140,7 @@ People who used their devices daily but probably took them off during before the
 
 - **Removing Duplicates**
 
-We will remove any deuplcate data if there are any. 
+We will remove any duplicate data if there are any. 
 
 ```
 daily_sleep.drop_duplicates(inplace= True)
@@ -187,7 +187,7 @@ df_activity_sleep = pd.merge(left = daily_activity, right = daily_sleep, on = ['
 
 **Group By**
 
-Grouping By 'id' will allow the process of doing calculations for each user a lot easier.
+Grouping By 'id' will allow the process of doing various calculations for each user a lot easier.
 
 ```
 #group by id for 'df_activity_sleep'
@@ -344,7 +344,7 @@ We will test the correlation between using a scatter plot to better understand t
 
 It is also important to keep in mind that correaltion does not mean causation.
 
-**Corelation between Total Steps and Total Calories burned**
+**Correlation between Total Steps and Total Calories burned**
 
 ```
 plt.figure(figsize=(10,10))
@@ -359,7 +359,7 @@ plt.show()
 
 From the visualizations we can see that there is a moderate positive correlation between total steps and calories, which is expected as the more steps someone walks the more calories they burn.
 
-**Corelation between Total Steps and Total Minutes Sleep**
+**Correlation between Total Steps and Total Minutes Sleep**
 
 ```
 plt.figure(figsize=(10,10))
