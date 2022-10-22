@@ -348,6 +348,10 @@ plt.show()
 
 **Correlations**
 
+We will test the correlation between using a scatter plot to better understand the following relationships:
+- Total steps and calories
+- Total steps and minutes slept
+
 ```
 #CORRELATION between steps & calories
 
@@ -379,6 +383,12 @@ plt.show()
 ```
 
 ![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/Total%20Steps%20VS%20Total%20Minutes%20Slept.png)
+
+From the visualizations we can see that:
+- There is a moderate positive correlation between total steps and calories, which is expected as the more steps someone walks the more calories they burn
+- Low negtaive correaltion between total steps and minutes slept indicates the more active might actually get less asleep
+
+It is also important to keep in mind that correaltion does not mean causation.
 
 **Device Usage**
 
