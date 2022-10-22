@@ -97,9 +97,7 @@ daily_sleep.columns = daily_sleep.columns.str.lower()
 ```
 - **Removing some unnessary columns**
 
-Columns that are not required for the analysis and doesn't add any real value to the data analysis process will be removed.
-- In daily_activity df 'totalDistance' and 'tranckerdistance' seems to have the same data. 
-- The two columns 'loggedactivitiesdistance' and 'sedentaryactivedistance' will also be removed.
+Columns that are not required for the analysis and doesn't add any real value to the data analysis process will be removed. In daily_activity df 'totalDistance' and 'tranckerdistance' seems to have the same data. The two columns 'loggedactivitiesdistance' and 'sedentaryactivedistance' will also be removed.
 
 ```
 daily_activity.drop(columns='trackerdistance', inplace= True)
@@ -108,6 +106,7 @@ daily_activity.drop(columns='loggedactivitiesdistance', inplace = True)
 
 daily_activity.drop(columns='sedentaryactivedistance', inplace = True)
 ```
+
 - **Round 'totaldistance' column to 2 decimal places**
 
 The 'totaldistance' column values will be rounded to 2 decimal places.
