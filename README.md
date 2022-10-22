@@ -97,14 +97,11 @@ daily_activity.columns = daily_activity.columns.str.lower()
 daily_sleep.columns = daily_sleep.columns.str.lower()
 ```
 - **Removing some unnessary columns**
+Columns that are not required for the analysis and doesn't add any real value to the data analysis process will be removed.
+In daily_activity df 'totalDistance' and 'tranckerdistance' seems to have the same data. Remove 'trackerdistance' column
 
 ```
-###Removing unncessary columns
-
-#In daily_activity df 'totalDistance' and 'tranckerdistance' seems to have the same data. Remove 'trackerdistance' column
-
 daily_activity.drop(columns='trackerdistance', inplace= True)
-
 
 #Drop LoggedActivitiesDistance from daily_activity
 
