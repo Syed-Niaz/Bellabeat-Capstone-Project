@@ -10,7 +10,7 @@ Bellabeat is a high-tech company that manufactures health-focused smart products
 
 Bellabeat's cofounder and Chief Creative Officer wants to analyze smart device usage data in order to gain insight into how consumers use non-Bellabeat smart devices. She then wants to select one Bellabeat product to apply these insights to. The main focus of this case is to analyze smart devices fitness data and determine how it could help unlock new growth opportunities for Bellabeat. 
 
-**Prodct in focus -** Bellabeat app.
+**Prodct in focus -** Bellabeat app
 
 ## Data Analysis Process
 - Ask
@@ -87,28 +87,26 @@ daily_sleep = pd.read_csv(r"D:\PROJECTS\Google DA Capstone\Fitabase Data 4.12.16
 
 This section involves prepping the dataset for the analysis.
 
-
 - **Case consistency in the column names**
 
-```
 #Turning column names to lowercase for consistency
 
+```
 daily_activity.columns = daily_activity.columns.str.lower()
 daily_sleep.columns = daily_sleep.columns.str.lower()
 ```
 - **Removing some unnessary columns**
-Columns that are not required for the analysis and doesn't add any real value to the data analysis process will be removed.
-In daily_activity df 'totalDistance' and 'tranckerdistance' seems to have the same data. Remove 'trackerdistance' column
+
+Columns that are not required for the analysis and doesn't add any real value to the data analysis process will be removed. In daily_activity df 'totalDistance' and 'tranckerdistance' seems to have the same data. The two columns 'loggedactivitiesdistance' and 'sedentaryactivedistance' will also be removed.
 
 ```
 daily_activity.drop(columns='trackerdistance', inplace= True)
 
-#Drop LoggedActivitiesDistance from daily_activity
+#Drop 'LoggedActivitiesDistance' column from daily_activity dataframe
 
 daily_activity.drop(columns='loggedactivitiesdistance', inplace = True)
 
-
-#SedentaryActiveDistance doesn't add any value and is pretty much useless so it will be remove it
+#'SedentaryActiveDistance' column doesn't add any value and is pretty much useless so it will be remove it
 
 daily_activity.drop(columns='sedentaryactivedistance', inplace = True)
 ```
