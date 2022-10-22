@@ -371,8 +371,9 @@ plt.show()
 
 ![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/Total%20Steps%20VS%20Calories.png)
 
-```
 From the visualizations we can see that there is a moderate positive correlation between total steps and calories, which is expected as the more steps someone walks the more calories they burn
+
+```
 
 #CORRELATION between steps & sleep
 
