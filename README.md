@@ -84,13 +84,7 @@ daily_sleep = pd.read_csv(r"D:\PROJECTS\Google DA Capstone\Fitabase Data 4.12.16
 
 #### 3.3 Data Cleaning & Preparation
 
-This section involves prepping the dataset for the analysis. Some of the common issues that will be resolved are:
-
-- Case inconsistency
-- Unnecessary columns
-- Inconsistent decimal places
-- Inappropiate data format
-- Duplicate data
+This section involves prepping the dataset for the analysis.
 
 
 - **Case consistency in the column names**
