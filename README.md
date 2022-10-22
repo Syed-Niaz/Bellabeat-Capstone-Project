@@ -139,22 +139,20 @@ daily_activity['id'].nunique() - daily_sleep['id'].nunique()
 People who used their devices daily but probably took them off during before their sleep.
 
 - **Removing Duplicates**
+
+We will remove any deuplcate data if there are any. 
+
 ```
-#Removing duplicates
-
 daily_sleep.drop_duplicates(inplace= True)
-
-#check
 
 sum(daily_sleep.duplicated())
 ```
 0
 
-There are no duplicates.
-
 - **Changing Data Format**
 
 Changing 'activitydate' & 'sleepday' columns to datetime format
+
 ```
 daily_activity['activitydate'] = pd.to_datetime(daily_activity['activitydate'])
 daily_sleep['sleepday'] = pd.to_datetime(daily_sleep['sleepday'])
@@ -168,6 +166,7 @@ daily_sleep['sleepday'] = pd.to_datetime(daily_sleep['sleepday']).dt.date
 ```
 
 The 'sleepday' column data format needs to be changed again and renamed.
+
 ```
 daily_sleep['sleepday'] = pd.to_datetime(daily_sleep['sleepday'])
 
