@@ -359,9 +359,6 @@ It is also important to keep in mind that correaltion does not mean causation.
 ```
 plt.figure(figsize=(10,10))
 
-
-#Scatter Plot with Seaborn
-
 sns.regplot(x= 'totalsteps', y= 'calories', data = daily_activity, scatter_kws= {"color": "blue"}, line_kws= {"color": "red"})
 
 plt.title('Total Steps VS Calories')
@@ -377,8 +374,6 @@ From the visualizations we can see that there is a moderate positive correlation
 
 ```
 plt.figure(figsize=(10,10))
-
-#Scatter Plot with seaborn
 
 sns.regplot(x= 'totalsteps', y= 'totalminutesasleep', data = df_activity_sleep, scatter_kws= {"color": "blue"}, line_kws= {"color": "red"})
 
