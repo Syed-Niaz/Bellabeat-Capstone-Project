@@ -10,7 +10,7 @@ Bellabeat is a high-tech company that manufactures health-focused smart products
 
 Bellabeat's cofounder and Chief Creative Officer wants to analyze smart device usage data in order to gain insight into how consumers use non-Bellabeat smart devices. She then wants to select one Bellabeat product to apply these insights to. The main focus of this case is to analyze smart devices fitness data and determine how it could help unlock new growth opportunities for Bellabeat. 
 
-**Prodct in focus -** Bellabeat app
+**Product in focus -** Bellabeat app
 
 ## Data Analysis Process
 - Ask
@@ -95,7 +95,7 @@ This section involves prepping the dataset for the analysis.
 daily_activity.columns = daily_activity.columns.str.lower()
 daily_sleep.columns = daily_sleep.columns.str.lower()
 ```
-- **Removing some unnessary columns**
+- **Removing some unnecessary columns**
 
 Columns that are not required for the analysis and doesn't add any real value to the data analysis process will be removed. In daily_activity df 'totalDistance' and 'tranckerdistance' seems to have the same data. The two columns 'loggedactivitiesdistance' and 'sedentaryactivedistance' will also be removed.
 
@@ -117,14 +117,14 @@ daily_activity['totaldistance'] = daily_activity['totaldistance'].round(decimals
 
 - **Identifying number of users**
 
-Verifying number of users in datasets
+Verifying the number of users in datasets.
 
 ```
 daily_activity['id'].nunique()
 ```
 33
 
-People who used their devices daily.
+Number of users who used their devices daily.
 ```
 daily_sleep['id'].nunique()
 ```
@@ -437,7 +437,7 @@ days_worn['use'] = np.select(conditions, values)
 days_worn
 
 ```
-**User Classification - Device Usage**
+**User Classification - 'Device Usage'**
 
 ```
 days_worn_perc = days_worn['use'].value_counts(normalize=True)*100
@@ -454,9 +454,9 @@ days_worn_perc.rename(columns={'index':'use_level',
 days_worn_perc
 ```
 
-**User Classification - Device Usage Visualization**
+**User Classification - 'Device Usage' Visualization**
 
-We will visualize the usage of the devices by the users in a pie chart.
+Visualizing the usage of the devices by the users in a pie chart.
 
 ```
 #formating fig size and label
