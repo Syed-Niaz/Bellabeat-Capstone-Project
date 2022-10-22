@@ -219,16 +219,15 @@ avg_data.reset_index(inplace=True)
 avg_data
 ```
 
-**User Type - Avg Steps daily Visualization**
+**User Type - 'Avg Steps Daily' Visualization**
 
-Finding the average number of steps walked daily by each user and then plot that into a chart.
+Finding the average number of steps walked daily by each user and then plot that into a horizontal bar chart.
 
 ```
 #changing 'id' to string type for plotting bar chart
 
 avg_data['id']= avg_data['id'].astype('str')
 ```
-
 
 ```
 #adjust figure size, label font size, and axis font size
@@ -253,9 +252,9 @@ plt.show()
 ```
 ![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/Avg%20Steps%20daily.png)
 
-**User Classification - Avg Steps**
+**User Classification - 'Avg Steps'**
 
-Classifyinh users based on the average number of steps they walked daily. 
+Classifying users based on the average number of steps they walked daily. 
 
 The following benchmarks are set for classification:
 
