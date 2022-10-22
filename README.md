@@ -112,15 +112,16 @@ daily_activity.drop(columns='sedentaryactivedistance', inplace = True)
 ```
 - **Round 'totaldistance' column to 2 decimal places**
 
-```
-#Changing 'totaldistance' to 2 decimal places
+The 'totaldistance' column values will be rounded to 2 decimal places.
 
+```
 daily_activity['totaldistance'] = daily_activity['totaldistance'].round(decimals= 2)
 ```
 
 - **Identifying number of users**
 
 Verifying number of users in datasets
+
 ```
 daily_activity['id'].nunique()
 ```
@@ -151,6 +152,8 @@ daily_sleep.drop_duplicates(inplace= True)
 sum(daily_sleep.duplicated())
 ```
 0
+
+There are no duplicates.
 
 - **Changing Data Format**
 
