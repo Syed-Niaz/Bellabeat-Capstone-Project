@@ -477,6 +477,11 @@ plt.show()
 
 **User Sleep Pattern**
 
+Time to look into the sleep patter of the users. We will look into the following stats in comparison to each other:
+- Time in bed
+- Time asleep
+- Time taken to fall asleep
+
 ```
 #putting it in a df and resetting the index
 
@@ -500,7 +505,7 @@ avg_sleep['id']= avg_data['id'].astype('str')
 avg_sleep
 ```
 
-**Users' Sleep Pattern**
+**Users' Sleep Pattern Visualization**
 
 ```
 #change 'id' dtype to str so it can be used as a label
