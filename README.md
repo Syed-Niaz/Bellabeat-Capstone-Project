@@ -31,7 +31,7 @@ Identify trends in how consumers use non-Bellabeat smart devices to apply insigh
 - Sando Mur - Bellabeat cofounder and key member of Bellabeat executive team
 - Bellabeat Marketing Analytics team
 
-<u> ### 2. Prepare </u>
+### <u> 2. Prepare </u>
 #### 2.1 Dataset
 **Link:** [FitBit Fitness Tracker Data](https://www.kaggle.com/datasets/arashnic/fitbit)
 
