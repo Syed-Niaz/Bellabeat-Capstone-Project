@@ -324,23 +324,20 @@ user_type_percentage
 
 **User Classification - Avg Steps Visualization**
 
-```
-#USER CATEGORY- Pie Chart of the users categorized by their activity level which is measured by their avg daily steps
+A Pie Chart will be used to visualzie the user categorization by their activity level which is measured by their avg daily steps
 
+```
 #formating fig size and label
 
 plt.figure(figsize=(10,10))
 plt.rc('axes', titlesize=15)
-
 
 #Pie Chart
 
 plt.pie(user_type_percentage['perc_total'], labels= user_type_percentage['user_type'], autopct='%1.1f%%')
 
 plt.title('User Type %')
-
 plt.legend()
-
 plt.show()
 ```
 
@@ -362,7 +359,6 @@ plt.figure(figsize=(10,10))
 sns.regplot(x= 'totalsteps', y= 'calories', data = daily_activity, scatter_kws= {"color": "blue"}, line_kws= {"color": "red"})
 
 plt.title('Total Steps VS Calories')
-
 plt.show()
 ```
 
@@ -462,9 +458,9 @@ days_worn_perc
 
 **User Classification - Device Usage Visualization**
 
-```
-#USER CATEGORY- Pie Chart of the users categorized by their activity level which is measured by their avg daily steps
+We will visualize the usage of the devices by the users in a pie chart.
 
+```
 #formating fig size and label
 
 plt.figure(figsize=(8,8))
@@ -475,9 +471,7 @@ plt.rc('axes', titlesize=15)
 plt.pie(days_worn_perc['use'], labels= days_worn_perc['use_level'], autopct='%1.1f%%')
 
 plt.title('User Type %')
-
 plt.legend()
-
 plt.show()
 ```
 ![This is an image](https://github.com/Syed-Niaz/Bellabeat-Capstone-Project/blob/main/User%20Type%20-%20Device%20Usage.png)
