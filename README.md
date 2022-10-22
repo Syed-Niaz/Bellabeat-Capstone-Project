@@ -435,7 +435,6 @@ values = ['high use', 'moderate use', 'low use']
 days_worn['use'] = np.select(conditions, values)
 
 days_worn
-
 ```
 **User Classification - 'Device Usage'**
 
