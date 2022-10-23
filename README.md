@@ -545,11 +545,6 @@ Even after getting in bed some users tend to fall asleep later. This may indicat
 - **Warning Alert Notification** to send a message to users to stop using their phones.
 - **Content Recommendation** (blog or video) to users who struggle falling asleep about how they can improve their sleeping habits . Content recommendation should be sent at a time based on user sleep patter so that users doesn't start watching the content while they are in bed.
 
-**Daily Notifications**
-
-- Steps covered
-- Calories burned
-
 **Personalized Goals**
 
 App can set goals by creating milestones for steps covered and calories burned for each user and alert them when they have achieved them. In-built Body Mass Index (BMI) calculator in th app can help in setting customized goals for each user.
