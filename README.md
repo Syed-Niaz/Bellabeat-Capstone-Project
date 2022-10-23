@@ -550,6 +550,9 @@ Even after getting in bed some users tend to fall asleep later. This may indicat
 - Steps covered
 - Calories burned
 
+**Set Goal Alert**
+App can set goals like steps covered and calories burned for each user and alert them when they have achieved them. In-built BMI calculator in th app can help in setting customized goals for each user.
+
 **Rewards**
 
 Customers can get rewards based on their activity level. As per the benchmark set. 'Active Users' may qualify for rewards like customer points or discounts on their next purchase of a Bellabeat product. Thus encouraging a healthier lifestyle and may also increase sales.
