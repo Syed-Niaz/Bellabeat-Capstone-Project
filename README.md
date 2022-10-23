@@ -550,7 +550,7 @@ Even after getting in bed some users tend to fall asleep later. This may indicat
 - Steps covered
 - Calories burned
 
-**Set Goal Alert**
+**Personalized Goals**
 
 App can set goals by creating milestones for steps covered and calories burned for each user and alert them when they have achieved them. In-built Body Mass Index (BMI) calculator in th app can help in setting customized goals for each user.
 
